@@ -1,5 +1,8 @@
 
 npm gerenciador/repositorio de dados do node js
+
+estamos usando o prompt de comando do windows
+
 primeiro comando 
 npm init es6 -y
 comando prepara o ambiente com o arquivo package.json onde fica tudo que instalo no projeto 
@@ -12,6 +15,9 @@ arquivo server js
 
 executar o servidor
 node server.js
+ou para não precisar parar o serviço apos atualizações use o comando abaixo. depois do watch colocar o nome do servidor
+
+node --watch server.js
 
 criar rota e definir respota
 
@@ -26,3 +32,21 @@ AIzaSyDKerjMXJSXk6r6M1MmehKcAvSAtxDoW_c
 foi criado um txt com a chave dentro do projeto e depois um arquivo gitignore para não subir esse arquvio da chave e nem a pasta node modules que só serve no meu projeto local ficou conforme abaixo
 node_modules
 chave-api.txt
+
+aula 2
+
+fizemos com a ajuda do gemini um array de objetos com id 
+
+o site
+http.cat
+Tem explicações todas as respostas de status padrão possivel
+
+agora estamo usando o mongo db na nuvem para fazer um bd
+
+https://cloud.mongodb.com/
+user miltonrmdf
+senha 140586@Tinho
+mongodb
+
++srv://miltonrmdf:<db_password>@cluster0.6ijxz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
