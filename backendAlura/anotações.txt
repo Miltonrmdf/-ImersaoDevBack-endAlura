@@ -1,0 +1,28 @@
+
+npm gerenciador/repositorio de dados do node js
+primeiro comando 
+npm init es6 -y
+comando prepara o ambiente com o arquivo package.json onde fica tudo que instalo no projeto 
+
+instala a ferramenta
+npm  install express
+
+criando o server 
+arquivo server js
+
+executar o servidor
+node server.js
+
+criar rota e definir respota
+
+criando chave do gemini google para usar nos projetos, entrar no site 
+www.alura.tv/google-gemini-api
+depois aparece esse endereço
+https://aistudio.google.com/app/apikey
+ 
+eu gerei essa chave
+AIzaSyDKerjMXJSXk6r6M1MmehKcAvSAtxDoW_c
+
+foi criado um txt com a chave dentro do projeto e depois um arquivo gitignore para não subir esse arquvio da chave e nem a pasta node modules que só serve no meu projeto local ficou conforme abaixo
+node_modules
+chave-api.txt
