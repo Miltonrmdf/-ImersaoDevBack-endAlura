@@ -45,8 +45,53 @@ agora estamo usando o mongo db na nuvem para fazer um bd
 
 https://cloud.mongodb.com/
 user miltonrmdf
-senha 140586@Tinho
+senha gQWbGFEpqsUKSWJo
 mongodb
 
-+srv://miltonrmdf:<db_password>@cluster0.6ijxz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+mongodb+srv://miltonrmdf:140586@Tinho@cluster0.6ijxz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+aula 3
+npm isntall mongodb no terminal
+
+no mongo db criamos databasename imesao-isntabytes e a coleção posts
+
+para proteger as informções sensiveis nesse caso usuário e senha usamos variaveis de ambiente, dai criamos o arquivo na raiz .env que assumiu iconde de engrenagem.
+dentro desse arquivo é tudo maiusculo separado por _ underline
+
+depois colocamos no package.jso despois de scripts o seguinte comando:
+  
+  "scripts": {
+    "dev": "node --watch --env-file=.env server.js",
+    "test": ""
+node --watch (olhe) --env-file=.env(tem um arq de variavel de ambiente com a conexão) sever.js
+essa linha automatiza e não vamos precisar digitar essa linha toda vez
+
+é sempre indicado colocar o arquivo de conexção separado nesse caso criamos a pasta src a pasta config e por ultimo o arquivo dbConfig.js para colocar o drive de conexão com o mongo db cloud:
+
+import { MongoClient } from 'mongodb';
+
+export default async function conectarAoBanco(stringConexao) {
+  let mongoClient;
+
+  try {
+      mongoClient = new MongoClient(stringConexao);
+      console.log('Conectando ao cluster do banco de dados...');
+      await mongoClient.connect();
+      console.log('Conectado ao MongoDB Atlas com sucesso!');
+
+      return mongoClient;
+  } catch (erro) {
+      console.error('Falha na conexão com o banco!', erro);
+      process.exit();
+  }
+}
+
+separamos as responsabilidades em pastas
+controller (funções para manipular os dados get post put delete..., model (cuida dos dados) e rotas
+
+modelo recebe as requisições e faz "coisa com ela"
+rota por onde chegam as requisições
+conexão com bd e faz conexões
+
+aula 4
 

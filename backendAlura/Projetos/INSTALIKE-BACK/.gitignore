@@ -1,2 +1,4 @@
 node_modules
 chave-api.txt
+.env
+mongodb+srv://miltonrmdf:<db_password>@cluster0.6ijxz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
