@@ -95,3 +95,7 @@ conexão com bd e faz conexões
 
 aula 4
 
+para usar o verbo de post usamos uma exteção do vscode a thunder client (parece o postman)
+
+salvar um imagem local no banco
+vamos usar o multer no node via terminal e vamos usar o postman no post, body, form-data
